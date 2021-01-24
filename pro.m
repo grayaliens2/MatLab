@@ -1,11 +1,6 @@
 greyPhoto2 = greyscale('photo2.jpg')%create greyscale matricies
 greyPhoto1 = greyscale('photo1.jpg')
-%R = S(256)%call S on 256 because image 2 is 256 by 256
-%This value takes a long time to compute but becuase 
-%matlab has the functionality of storing values
-%I can run this once and still retain the value 
-%even if comment this out which I have done so
-%for the sake of the publishing
+R = S(256)%call S on 256 because image 2 is 256 by 256
 Y = R*greyPhoto2*R
 undo = R*Y*R%gives original image in order to compare the compressed one too
 figure%prints og image
