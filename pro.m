@@ -15,7 +15,7 @@ n = 256
 p = 0.1
 for i = 1:n%note I have modified the fuction give to use logical indexing
     j = 1 : n %the given nested for loops take approx 1 hr to complete
-    Y(i, j) = (i + j >p*2*n).*(0) +(i + j <= p*2*n).*(Y(i, j))%this uses logical indexing
+    Y(i, j) = (i + j >p*2*n).*(0) +(i + j <= p*2*n).*(Y(i, j))%this uses list comprehension
     %to make the calculations go by much faster
     %now it takes around 1 minute
     %what we are doing is modifying the if statement to occure in one line
